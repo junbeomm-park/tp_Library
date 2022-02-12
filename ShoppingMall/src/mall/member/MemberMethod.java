@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Join {
+public class MemberMethod {
 	Scanner sc = new Scanner(System.in);
 	List<Member> list = new ArrayList<Member>();
 	Member m = new Member();
@@ -27,16 +27,6 @@ public class Join {
 		System.out.println("회원 가입 성공 !!!!");
 	}
 	
-	public void print() {
-		for(Member b : list) {
-			System.out.println("이름 : " + b.getName());
-			System.out.println("아이디 : " + b.getId());
-			System.out.println("비밀번호 : " + b.getPassword());
-			System.out.println("생년월일 : " + b.getbirth());
-			System.out.println("주소 : " + b.getAddress());
-		}
-	}
-	
 	public void login() {
 		System.out.print("아이디를 입력 하세요 : ");
 		String id = sc.nextLine();
@@ -51,4 +41,18 @@ public class Join {
 			}
 		}
 	}
+	
+	public void modify() {
+		
+	}
+	public void print() {
+		for(Member b : list) {
+			System.out.println("이름 : " + b.getName());
+			System.out.println("아이디 : " + b.getId());
+			System.out.println("비밀번호 : " + b.getPassword());
+			System.out.println("생년월일 : " + b.getbirth());
+			System.out.println("주소 : " + b.getAddress());
+		}
+	}
+	
 }

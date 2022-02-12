@@ -1,12 +1,13 @@
 package mall.product;
 
+
 public class Product {
 	String p_name;
 	int price;
 	int amount;
 	
 	public Product() {
-		
+	
 	}
 	
 	public Product(String p_name, int price, int amount) {

@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import mall.product.Cart;
+import mall.product.Product;
+
 public class Member {
-	Scanner sc = new Scanner(System.in);
 	private String name;
 	private String id;
 	private String password;
 	private int birth;
 	private String address;
+	private List<Cart> carts;
 	
 	public Member() {
 		
@@ -23,6 +26,19 @@ public class Member {
 		this.password = password;
 		this.birth = birth;
 		this.address = address;
+		carts = new ArrayList<Cart>();
+	}
+	
+	public void addCart(Cart cart) {
+		carts.add(cart);
+	}
+	
+	public List<Product> getCart() {
+		List<Product> products = new ArrayList<Product>();
+		for(Cart c : carts) {
+			products.add(c.getProduct());
+		}
+		return products;
 	}
 	
 

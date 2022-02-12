@@ -48,13 +48,13 @@ public class RunProgram {
 	
 	public void shopping() {
 		
-		System.out.println("1.상품목록보기 2.장바구니 3.회원정보 수정 4.회원탈퇴 5.뒤로가기");
+		System.out.println("1.상품구매하기 2.장바구니 3.회원정보 수정 4.회원탈퇴 5.뒤로가기");
 		System.out.print("선택 : ");
 		String menu = sc.nextLine();
 		
 		switch (menu) {
 		case "1":
-				pm.print();
+				pm.purchase();
 			break;
 			
 		case "3":

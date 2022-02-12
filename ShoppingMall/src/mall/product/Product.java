@@ -1,10 +1,13 @@
 package mall.product;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Product {
-	String p_name;
-	int price;
-	int amount;
+	private String p_name;
+	private int price;
+	private int amount;
+	private List<Cart> carts;
 	
 	public Product() {
 	
@@ -15,6 +18,12 @@ public class Product {
 		this.p_name = p_name;
 		this.price = price;
 		this.amount = amount;
+		carts = new ArrayList<Cart>();
+	}
+	
+	public void addCart(Cart cart) {
+		carts.add(cart);
+		
 	}
 
 	public String getP_name() {

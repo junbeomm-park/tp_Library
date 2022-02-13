@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
-	private String p_name;
-	private int price;
+	private String bookName;
+	private String writer;
+	private String publisher;
+	private String category;
 	private int amount;
 	private List<Cart> carts;
 	
@@ -13,33 +15,46 @@ public class Book {
 	
 	}
 	
-	public Book(String p_name, int price, int amount) {
+	public Book(String bookName, String writer, String publisher, String category, int amount ) {
 		super();
-		this.p_name = p_name;
-		this.price = price;
+		this.bookName = bookName;
+		this.writer = writer;
+		this.publisher = publisher;
+		this.category = category;
 		this.amount = amount;
 		carts = new ArrayList<Cart>();
 	}
-	
-	public void addCart(Cart cart) {
-		carts.add(cart);
-		
+
+	public String getBookName() {
+		return bookName;
 	}
 
-	public String getP_name() {
-		return p_name;
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
 	}
 
-	public void setP_name(String p_name) {
-		this.p_name = p_name;
+	public String getWriter() {
+		return writer;
 	}
 
-	public int getPrice() {
-		return price;
+	public void setWriter(String writer) {
+		this.writer = writer;
 	}
 
-	public void setPrice(int price) {
-		this.price = price;
+	public String getPublisher() {
+		return publisher;
+	}
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	public int getAmount() {
@@ -49,6 +64,15 @@ public class Book {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+
+	public List<Cart> getCarts() {
+		return carts;
+	}
+
+	public void setCarts(List<Cart> carts) {
+		this.carts = carts;
+	}
+	
 	
 	
 }

@@ -17,13 +17,16 @@ public class RunProgram {
 		
 	}
 	
+	//초기 화면 view
 	public void index() {
-		while(true) {
+		String menu = null;
+		
+		do {
 			System.out.println("=================준범's Library=================");
 			System.out.println("처음 이용 하시는 고객님은 회원 가입을 진행 해주세요 ! \n\n\n");
 			System.out.println("1. 회원가입 2. 로그인 3. 관리자로그인 4.test");
 			System.out.print("선택 : ");
-			String menu = sc.nextLine();
+			menu = sc.nextLine();
 			
 			switch (menu) {
 			case "1":
@@ -43,9 +46,10 @@ public class RunProgram {
 			default:
 				break;
 			}
-		}	
+		}while(!menu.equals("q"));
 	}
 	
+	//로그인 성공시 보여지는 view
 	public void shopping() {
 		
 		System.out.println("1.베스트셀러 2.도서 전체 보기 3.도서 검색 4.도서 반납 5.마이페이지 6. 뒤로가기");
@@ -61,7 +65,7 @@ public class RunProgram {
 			break;
 		
 		case "3":
-			
+				pm.bookSerch();
 			break;
 		case "5":
 			

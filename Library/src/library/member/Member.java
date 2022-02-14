@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import library.book.Cart;
+import library.reservation.Reservation;
 import library.book.Book;
 
 public class Member {
@@ -13,7 +13,7 @@ public class Member {
 	private String password;
 	private int birth;
 	private String address;
-	private List<Cart> carts;
+	private List<Reservation> reservates;
 	
 	public Member() {
 		
@@ -26,20 +26,13 @@ public class Member {
 		this.password = password;
 		this.birth = birth;
 		this.address = address;
-		carts = new ArrayList<Cart>();
+		reservates = new ArrayList<Reservation>();
 	}
 	
-	public void addCart(Cart cart) {
-		carts.add(cart);
+	public void addCart(Reservation reservation) {
+		reservates.add(reservation);
 	}
 	
-	public List<Book> getCart() {
-		List<Book> products = new ArrayList<Book>();
-		for(Cart c : carts) {
-			products.add(c.getProduct());
-		}
-		return products;
-	}
 	
 
 	public String getName() {

@@ -3,13 +3,15 @@ package library.book;
 import java.util.ArrayList;
 import java.util.List;
 
+import library.reservation.Reservation;
+
 public class Book {
 	private String bookName;
 	private String writer;
 	private String publisher;
 	private String category;
 	private int amount;
-	private List<Cart> carts;
+	private List<Reservation> reservates;
 	
 	public Book() {
 	
@@ -22,7 +24,7 @@ public class Book {
 		this.publisher = publisher;
 		this.category = category;
 		this.amount = amount;
-		carts = new ArrayList<Cart>();
+		reservates = new ArrayList<Reservation>();
 	}
 
 	public String getBookName() {
@@ -65,13 +67,15 @@ public class Book {
 		this.amount = amount;
 	}
 
-	public List<Cart> getCarts() {
-		return carts;
+	public List<Reservation> getReservates() {
+		return reservates;
 	}
 
-	public void setCarts(List<Cart> carts) {
-		this.carts = carts;
+	public void setReservates(List<Reservation> reservates) {
+		this.reservates = reservates;
 	}
+
+	
 	
 	
 	

@@ -5,13 +5,16 @@ import java.util.List;
 import java.util.Scanner;
 
 import library.member.Member;
+import library.reservation.Reservation;
 
 public class BookMethod {
 	List<Book> products;
 	List<Member> members;
-	List<Cart> carts;
+	List<Reservation> reservates;
 	Scanner sc = new Scanner(System.in);
 	
+	
+	//생성과 동시에 책 요소들 저장
 	public BookMethod() {
 		members = new ArrayList<Member>();
 		products = new ArrayList<Book>();
@@ -24,6 +27,8 @@ public class BookMethod {
 
 	}
 	
+	
+	//전체 도서 리스트 가져오기
 	public void bookList() {
 		int count = 1;
 		
@@ -44,7 +49,27 @@ public class BookMethod {
 		
 		for(Book pc : products) {
 			if(choice.equals(pc.getBookName())) {
-				carts.add(new Cart());
+				reservates.add(new Reservation());
+			}
+		}
+	}
+	
+	//도서명 검색
+	public void bookSerch() {
+		System.out.print("도서명 검색 : ");
+		String serch = sc.nextLine();
+		
+		
+		System.out.println("도서번호\t\t도서명\t\t저자\t\t출판사\t\t분류\t\t남은수량");
+		System.out.println("============================================================================================");
+		for(Book b : products) {
+			if(serch.equals(b.getBookName())) {
+				System.out.print(b.getBookName()+"\t");
+				System.out.print(b.getWriter()+"\t\t");
+				System.out.print(b.getPublisher()+"\t");
+				System.out.print(b.getCategory()+"\t\t");
+				System.out.print(b.getAmount()+"\t");
+				System.out.println();
 			}
 		}
 	}

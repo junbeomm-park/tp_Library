@@ -9,6 +9,7 @@ public class MemberMethod {
 	List<Member> list = new ArrayList<Member>();
 	Member m = new Member();
 	
+	//회원 가입
 	public  void join() {
 		System.out.println("=================회원가입=================");
 		System.out.print("이름 입력 :");
@@ -27,6 +28,7 @@ public class MemberMethod {
 		System.out.println("회원 가입 성공 !!!!");
 	}
 	
+	//로그인
 	public void login() {
 		System.out.print("아이디를 입력 하세요 : ");
 		String id = sc.nextLine();
@@ -42,9 +44,12 @@ public class MemberMethod {
 		}
 	}
 	
+	//회원 정보 수정
 	public void modify() {
 		
 	}
+	
+	//회원 전체 조회
 	public void print() {
 		for(Member b : list) {
 			System.out.println("이름 : " + b.getName());

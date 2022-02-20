@@ -35,9 +35,6 @@ public class Main {
 			
 			switch (menu) {
 			case "1":
-			
-				
-				
 				u.sign();
 				break;
 
@@ -79,35 +76,34 @@ public class Main {
 		ReservationInfo rv = new ReservationInfo();
 		Scanner sc = new Scanner(System.in);
 		
-		while(true) {
-			System.out.println("1. 객실조회  2.예약  3.예약조회  4.예약취소  5.마이페이지");
-			System.out.print("선택 : ");
-			String menu = sc.nextLine();
-			
-			switch (menu) {
-			case "1":
-				roomlist.show(room);
-				break;
-			case "2":
-				rv.add(room);
+			while(true) {
+				System.out.println("1. 객실조회  2.예약  3.예약조회  4.예약취소  5.마이페이지");
+				System.out.print("선택 : ");
+				String menu = sc.nextLine();
 				
-				break;
-			case "3":
-				
-				rv.show();
-				break;
-			case "4":
-				
-				break;
-			case "5":
-				
-				break;
-
+				switch (menu) {
+				case "1":
+					roomlist.show(room);
+					break;
+				case "2":
+					rv.add(room);
+					
+					break;
+				case "3":
+					
+					rv.show();
+					break;
+				case "4":
+					rv.cancle();
+					break;
+				case "5":
+					
+					break;
+	
+				}
+			}
 		}
-		
-		
-		}
-		
-		
+	public void myPage() {
+		 
 	}
 }

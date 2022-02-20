@@ -44,9 +44,6 @@ public class UserInformation  implements UserSevice {
 		System.out.println("\n---------------------");
 		System.out.println("회원가입 완료 !!!");
 		System.out.println("---------------------\n");
-		
-		
-
 	}
 
 	@Override
@@ -60,10 +57,6 @@ public class UserInformation  implements UserSevice {
 			}
 		}
 	}
-
-
-
-
 
 	@Override
 	public int login() {
@@ -82,10 +75,13 @@ public class UserInformation  implements UserSevice {
 				System.out.println(arr[i].getId()+"님 반갑습니다.");
 				System.out.println("---------------\n");
 				check = 1;
+				break;
 			}else if(id.equals(arr[i].getId()) && !pass.equals(arr[i].getPass())){
 				check = 2;
+				break;
 			}else {
 				check = 3;
+				break;
 			}
 		}
 		return check;

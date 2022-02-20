@@ -7,10 +7,14 @@ import hotel.room.Room;
 
 
 public class ReservationInfo implements ReservationService {
-	Scanner sc = new Scanner(System.in);
-	Reservation rv[] = new Reservation[10];
-	int count = 0;
+	Scanner sc ;
+	Reservation[] rv;
+	int count ;
 	
+	public ReservationInfo() {
+		rv = new Reservation[10];
+		sc = new Scanner(System.in);
+	}
 	@Override
 	public void show() {
 		System.out.print("예약자 이름 입력하세요 : ");
@@ -47,22 +51,30 @@ public class ReservationInfo implements ReservationService {
         System.out.print("숙박일 : ");
         int days = sc.nextInt();
         sc.nextLine();
+        int resernum = (int)(Math.random()*1000)+1;
+        System.out.println("예약번호가 발급 되었습니다. "+resernum);
         for (int i = 0; i < room.length; i++) {
            if (room[i].getRoomGrade().equals(r2)) {
-              rv[count++] = new Reservation(room[i].getRoomNo(),room[i].getRoomGrade(),room[i].getPrice(),name,people,days);
+              rv[count++] = new Reservation(room[i].getRoomNo(),room[i].getRoomGrade(),room[i].getPrice(),name,people,days,resernum);
               
            }
         }
-        
-        
-        
        
 	}
 
 	@Override
 	public void cancle() {
-		// TODO Auto-generated method stub
-
+		System.out.print("예약자 이름을 입력하세요 : ");
+		String name = sc.nextLine();
+		for(int i = 0; i < count; i++) {
+			if(rv[i].getName().equals(name)) {
+				System.out.println("예약취소 완료");
+				for(int j = i; j < count-1; j++) {
+					rv[j] = rv[j+1];
+				}
+				count--;
+			}
+		}
 	}
 
 	

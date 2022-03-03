@@ -142,6 +142,7 @@ DB없이 Java 로만 구현하는것이 목적이기에 직렬화(Serializable)�
 <br>
 <br>
 <br>
+
 ![캡처](https://user-images.githubusercontent.com/88473491/156573064-3878ea79-89b3-466f-a185-a7a3695cf910.PNG)
 
 

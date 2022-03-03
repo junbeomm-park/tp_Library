@@ -213,7 +213,7 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 
 연체료가 책정된 화면 입니다.
 
-
+https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cdd895c62a6/Library/src/library/Rent/RentImpl.java#L117-L212
 
 <br>
 <br>
@@ -232,6 +232,7 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 
 
 ``admin`` 으로 로그인시 관리자 화면으로 이동 하며 도서 목록 보기, 도서 추가,삭제,검색 등을 할 수 있습니다.
+https://github.com/junbeomm-park/tp_Library/blob/3cd9d735b611563b7ca75e2db910a08935b2d192/Library/src/library/manage/ManageImpl.java#L23-L38
 
 
 <br>
@@ -242,6 +243,7 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 ![관리자 도서 목록](https://user-images.githubusercontent.com/88473491/156573369-6129c0f4-d850-41e1-b2ca-7c3034185878.PNG)
 
 저장된 도서 목록을 볼 수 있으며 바로 삭제 할 수 있습니다.
+https://github.com/junbeomm-park/tp_Library/blob/3cd9d735b611563b7ca75e2db910a08935b2d192/Library/src/library/manage/ManageImpl.java#L99-L119
 
 
 
@@ -251,11 +253,11 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 
 ![도서 추가](https://user-images.githubusercontent.com/88473491/156573402-a6601d79-647c-4021-ac1b-5cc11f4656f2.PNG)
 
-
+https://github.com/junbeomm-park/tp_Library/blob/3cd9d735b611563b7ca75e2db910a08935b2d192/Library/src/library/manage/ManageImpl.java#L66-L97
 
 ![책정보 리스트](https://user-images.githubusercontent.com/88473491/156573426-36f636ff-dec1-469f-830b-af5edbda7207.PNG)
 
-
+https://github.com/junbeomm-park/tp_Library/blob/3cd9d735b611563b7ca75e2db910a08935b2d192/Library/src/library/book/BookImpl.java#L24-L32
 
 도서도 회원과 마찬가지로 직렬화(Serializable)를 사용하여 파일로 저장 했습니다.
 
@@ -276,7 +278,7 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 도서 검색 시 도서명 또는 카테고리로 조회 할 수 있습니다.
 
 
-
+https://github.com/junbeomm-park/tp_Library/blob/3cd9d735b611563b7ca75e2db910a08935b2d192/Library/src/library/book/BookImpl.java#L94-L138
 
 
 ## 🕵️‍♀️ 자문자답

@@ -454,7 +454,7 @@ public class LibraryIndexView {
 			System.out.println("==============================================================");
 			System.out.println("                           도서 검색");
 			System.out.println("==============================================================\n\n");
-			String keyword = getString("도서명을 입력해주세요. : ") ;
+			String keyword = getString("도서명 또는 카테고리를 입력해주세요. : ") ;
 			bookImpl.selectBookListPrint(keyword);
 			manage();
 			break;

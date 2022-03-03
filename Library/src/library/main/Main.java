@@ -1,5 +1,11 @@
 package library.main;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import library.Rent.RentDTO;
+import library.Rent.RentImpl;
+
 public class Main {
 	public static void main(String[] args) throws Exception{
 		LibraryIndexView library = new LibraryIndexView();
@@ -7,14 +13,14 @@ public class Main {
 		
 		
 //		FileUtil latefeeTest = new FileUtil("reservationInfoList");
-//		ReservationImpl impl = new ReservationImpl();
-//		List<ReservationDTO> test = impl.allUserReservationInfoList();
+//		RentImpl impl = new RentImpl();
+//		List<RentDTO> test = impl.allUserReservationInfoList();
 //		
 //		if(test == null) {
-//			test = new ArrayList<ReservationDTO>();
+//			test = new ArrayList<RentDTO>();
 //		}
 //		
-//		ReservationDTO dto = new ReservationDTO();
+//		RentDTO dto = new RentDTO();
 //		dto.setReservationIndex(100);
 //		dto.setId("123");
 //		dto.setIndex(1);

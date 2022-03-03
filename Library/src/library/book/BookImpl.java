@@ -71,7 +71,7 @@ public class BookImpl implements Book{
 			return;
 		}
 		
-		System.out.println("\n도서번호\t\t도서명\t\t도서 일일 대여 가격\t\t분류\t\t예약상태\t\t남은 수량");
+		System.out.println("\n도서번호\t\t도서명\t\t도서 대여 가격\t\t분류\t\t예약상태\t\t남은 수량");
 		System.out.println("===================================================================================================");
 
 		for(BookDTO bookInfo : bookInfoList) {
@@ -99,7 +99,7 @@ public class BookImpl implements Book{
 		Pattern p = Pattern.compile(regex);
 		
 		int cnt = 0;
-		System.out.println("\n도서번호\t\t도서명\t\t도서 일일 대여 가격\t\t분류\t\t예약상태\t남은 수량");
+		System.out.println("\n도서번호\t\t도서명\t\t도서 대여 가격\t\t분류\t\t예약상태\t남은 수량");
 		System.out.println("===================================================================================================");
 		
 		if(bookInfoList == null) {

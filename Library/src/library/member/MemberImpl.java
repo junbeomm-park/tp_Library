@@ -179,7 +179,7 @@ public class MemberImpl implements Member{
 	@Override
 	public void myInfoPrint(String id) {
 		MemberDTO memInfo = getMemInfo(id);
-		System.out.println("\n이름\t이메일\t\t\t아이디\t\t성별\t회원가입 날짜");
+		System.out.println("\n이름\t이메일\t\t\t아이디");
 		System.out.println("=========================================================\n");
 		System.out.print(memInfo.getName() + "\t");
 		System.out.print(memInfo.getEmail() + "\t");

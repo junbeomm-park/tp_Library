@@ -10,12 +10,7 @@ public class MemberDTO implements Serializable{
 	private String address;
 	private String email;
 	private String phone_num;
-//	private String name;
-//	private String email;
-//	private String id;
-//	private String pw;
-//	private int gender; //³²1, ¿©2
-//	private String joinDate ;
+
 	
 	public MemberDTO() {
 		super();

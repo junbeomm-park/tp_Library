@@ -15,7 +15,7 @@ import java.util.List;
 
 public class FileUtil {
 	private String fileName = "";
-	private String filePath = "C:\\Toy_Project\\tp_Library\\ProjectBook\\ProjectBook2\\src\\bookrent";
+	private String filePath = "C:\\Toy_Project\\tp_Library\\Library\\";
 	File file = null;
 
 	public FileUtil() {

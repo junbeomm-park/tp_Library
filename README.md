@@ -42,7 +42,7 @@
 
 
 
-![클래스 다이어그램](C:\Toy_Project\tp_Library\readme_img\클래스 다이어그램.PNG)
+![클래스 다이어그램](https://user-images.githubusercontent.com/88473491/156572658-8b2e83ba-c0e8-461c-a494-fe9fcf60386e.PNG)
 
 
 

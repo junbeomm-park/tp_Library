@@ -99,6 +99,7 @@
 
 
 이메일에 정규표현식(Regular expression)을 적용하여 정의한 형식에 맞지 않으면, 다시 재입력을 하게 구현 했습니다.
+[정규표현식 코드]https://github.com/junbeomm-park/tp_Library/blob/be826d379ba3a2db41ce6dd50cf4105caa27be1b/Library/src/library/member/MemberImpl.java#L33-L44
 
 
 <br>

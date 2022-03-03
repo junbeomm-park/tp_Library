@@ -189,7 +189,7 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 
 ![도서 반납](https://user-images.githubusercontent.com/88473491/156573262-9115d8be-abca-48c8-b89a-3f09cab23d4c.PNG)
 
-https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cdd895c62a6/Library/src/library/Rent/RentImpl.java#L225-L307
+
 
 ![반납 후 마이페이지](https://user-images.githubusercontent.com/88473491/156573272-1f5145c7-66e8-4e80-85e3-2f08a3c60e00.PNG)
 
@@ -198,6 +198,8 @@ https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cd
 대여한 도서를 반납 후 마이페이지에서 대여 도서 목록을 확인 하면 반납한 날짜와 연체료를 확인 할 수 있습니다.
 
 연체료는 대여시 입력한 대여일 이후 일당 200원씩 책정 되게 코딩 하였습니다.
+
+https://github.com/junbeomm-park/tp_Library/blob/b4236c01d4b4911c8a43920b707a7cdd895c62a6/Library/src/library/Rent/RentImpl.java#L225-L307
 
 
 

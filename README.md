@@ -34,7 +34,7 @@
 
 ##  😀 UseCase
 
-![유스케이스](C:\Toy_Project\tp_Library\readme_img\유스케이스.PNG)
+![usecase](C:\Toy_Project\tp_Library\readme_img\유스케이스.PNG)
 
 
 

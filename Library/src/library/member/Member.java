@@ -1,79 +1,24 @@
 package library.member;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-import library.reservation.Reservation;
-import library.book.Book;
-
-public class Member {
-	private String name;
-	private String id;
-	private String password;
-	private int birth;
-	private String address;
-	private List<Reservation> reservates;
+public interface Member {
+public boolean fileExists();
 	
-	public Member() {
-		
-	}
+	//로그인
+	public int login(String id, String pass); //로그인 체크
+	public MemberDTO getMemInfo(String id); //회원정보 가져오기
 	
-	public Member(String name, String id, String password, int birth, String address) {
-		super();
-		this.name = name;
-		this.id = id;
-		this.password = password;
-		this.birth = birth;
-		this.address = address;
-		reservates = new ArrayList<Reservation>();
-	}
+	//회원가입
+	public boolean isValidEmail(String email); //이메일 형식 확인
+	public boolean emailCheck(String newEmail); //이미 가입된 이메일이 아닌지 확인
+	public boolean idCheck(String id); //아이디 중복 확인 
+	public boolean confirmPW(String pass, String repw); //비번 재확인
+	public boolean memInfoWrite(String id, String pass, String name, String address, String email, String phone_num); //회원 정보 저장
 	
-	public void addCart(Reservation reservation) {
-		reservates.add(reservation);
-	}
-	
-	
+	public List<MemberDTO> getMemInfoList(); //회원정보 가져오기
+	public void myInfoPrint(String id); //특정 회원 정보 출력
+	public boolean updatePW(String id, String updatePW); //비밀번호 수정
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public int getbirth() {
-		return birth;
-	}
-
-	public void setbirth(int birth) {
-		this.birth = birth;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	
 	
 }

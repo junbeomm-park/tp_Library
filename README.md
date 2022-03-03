@@ -34,7 +34,7 @@
 
 ##  😀 UseCase
 
-![usecase](C:\Toy_Project\tp_Library\readme_img\usecase.PNG)
+![usecase](https://user-images.githubusercontent.com/88473491/156572497-6206e794-799c-4286-b2de-69ad2386a70f.PNG)
 
 
 

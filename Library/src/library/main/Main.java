@@ -12,22 +12,7 @@ public class Main {
 		library.index();
 		
 		
-//		FileUtil latefeeTest = new FileUtil("reservationInfoList");
-//		RentImpl impl = new RentImpl();
-//		List<RentDTO> test = impl.allUserReservationInfoList();
-//		
-//		if(test == null) {
-//			test = new ArrayList<RentDTO>();
-//		}
-//		
-//		RentDTO dto = new RentDTO();
-//		dto.setReservationIndex(100);
-//		dto.setId("123");
-//		dto.setIndex(1);
-//		dto.setReservationDate("2022-02-27");
-//		test.add(dto);
-//		
-//		latefeeTest.fileWriter(test);
+
 		
 	}
 }

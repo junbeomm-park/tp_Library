@@ -97,12 +97,6 @@ public class MemberImpl implements Member{
 		List<MemberDTO> memInfoList = (List<MemberDTO>) memFile.fileReader();
 		MemberDTO memDTO = new MemberDTO();
 		
-//		memDTO.setName(name);
-//		memDTO.setEmail(email);
-//		memDTO.setId(id);
-//		memDTO.setPw(pw);
-//		memDTO.setGender(gender);
-		
 		memDTO.setId(id);
 		memDTO.setPass(pass);
 		memDTO.setName(name);
